@@ -15,7 +15,8 @@ Hi everyone! I’m Nouman N, 4'th year Electronics and Communication student fro
 
 # Circuit Diagram
 
-![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137270925-40047595-76ba-4d32-89a3-6c4db49ea6d1.png)
+![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137279765-8a82a34f-1dc0-4afc-9bd3-a31d7f62c428.png)
+
 
 
 
