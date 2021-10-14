@@ -6,9 +6,17 @@ Hi everyone! I’m Nouman N, 4'th year Electronics and Communication student fro
 # Experiment 1 - Hello World LED Blinking
 
 # Components Required  
-Arduino Uno Board 
-USB Cable 
-LED (Any Color) x 1 Nos
-220 OHM Resistor X 1 Nos
-Breadboard 
-Jumper Wires (Male to Male ) X 2 Nos
+* Arduino Uno Board 
+* USB Cable 
+* LED (Any Color) x 1 Nos
+* 220 OHM Resistor X 1 Nos
+* Breadboard 
+* Jumper Wires (Male to Male ) X 2 Nos
+
+# Circuit Diagram
+
+![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137270925-40047595-76ba-4d32-89a3-6c4db49ea6d1.png)
+
+
+
+
