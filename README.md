@@ -24,7 +24,9 @@
 
 ## Code
 
-```int ledPin = 10; // define digital pin 10.
+```
+
+int ledPin = 10; // define digital pin 10.
 void setup()
 {
 pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
@@ -36,14 +38,18 @@ delay(1000); // wait for a second.
 digitalWrite(ledPin, LOW); // set the LED off.
 delay(1000); // wait for a second
 }
+
 ```
 
 ## Output
 
 > The LED is blinked with a time interval od 1 second
 
-https://user-images.githubusercontent.com/91405741/137283496-04e4fe43-bc6a-4ca5-a6e0-0f7ecdcd56c5.mp4
-
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/137283496-04e4fe43-bc6a-4ca5-a6e0-0f7ecdcd56c5.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 # Experiment 2 : Traffic Light
 
@@ -64,7 +70,9 @@ https://user-images.githubusercontent.com/91405741/137283496-04e4fe43-bc6a-4ca5-
 
 ## Code
 
-```int redled =10; // initialize digital pin 10.
+```
+
+int redled =10; // initialize digital pin 10.
 int yellowled =7; // initialize digital pin 7.
 int greenled =4; // initialize digital pin 4.
 void setup()
@@ -90,14 +98,18 @@ digitalWrite(redled, HIGH);// turn on red LED
 delay(5000);// wait 5 seconds
 digitalWrite(redled, LOW);// turn off red LED
 }
+
 ```
 
 ## Output
 
 > In Traffic light the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. This process continues.
 
-https://user-images.githubusercontent.com/91405741/137290512-e479c4b3-1810-4b72-966f-42348620b1f4.mp4
-
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/137290512-e479c4b3-1810-4b72-966f-42348620b1f4.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 # Experiment 3 : LED Chasing Effect
 
@@ -119,6 +131,7 @@ https://user-images.githubusercontent.com/91405741/137290512-e479c4b3-1810-4b72-
 ## Code
 
 ```
+
 int BASE = 2 ;  // the I/O pin for the first LED
 int NUM = 6;   // number of LEDs
 void setup()
@@ -146,8 +159,11 @@ void loop()
 
 ## Output
 
-https://user-images.githubusercontent.com/91405741/137293394-f7b99c4d-4659-44fc-87ca-d331f3b6ebaf.mp4
-
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/137293394-f7b99c4d-4659-44fc-87ca-d331f3b6ebaf.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 # Experiment 4: Button Controlled LED
 
@@ -196,8 +212,11 @@ else
 
 > When the push button is pressed the LED is turned on otherwise it is off.
 
-https://user-images.githubusercontent.com/91405741/137346113-b41f1d56-84b5-4437-9d7a-3f11ab84991a.mp4
-
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/137346113-b41f1d56-84b5-4437-9d7a-3f11ab84991a.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 # Experiment 5 : Buzzer
 
@@ -299,5 +318,8 @@ for(val=0; val<255; val++)
 
 > The RGB LED blinks.
 
-https://user-images.githubusercontent.com/91405741/137348290-42dcbd25-ad12-4c09-b50b-b8edf17e6235.mp4
-
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/137348290-42dcbd25-ad12-4c09-b50b-b8edf17e6235.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
