@@ -19,7 +19,9 @@ Hi everyone! I’m Nouman N, 4'th year Electronics and Communication student fro
 
 ## Code
 
-```int ledPin = 10; // define digital pin 10.
+```
+
+int ledPin = 10; // define digital pin 10.
 void setup()
 {
 pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
@@ -31,6 +33,7 @@ delay(1000); // wait for a second.
 digitalWrite(ledPin, LOW); // set the LED off.
 delay(1000); // wait for a second
 }
+
 ```
 
 ## Output
@@ -59,7 +62,9 @@ In the previous program, we have done the LED blinking experiment with one LED. 
 
 ## Code
 
-```int redled =10; // initialize digital pin 10.
+```
+
+int redled =10; // initialize digital pin 10.
 int yellowled =7; // initialize digital pin 7.
 int greenled =4; // initialize digital pin 4.
 void setup()
@@ -85,6 +90,7 @@ digitalWrite(redled, HIGH);// turn on red LED
 delay(5000);// wait 5 seconds
 digitalWrite(redled, LOW);// turn off red LED
 }
+
 ```
 
 ## Output
@@ -113,7 +119,9 @@ We often see billboards composed of colorful LEDs. They are constantly changing 
 
 ## Code
 
-```int BASE = 2 ;  // the I/O pin for the first LED
+```
+
+int BASE = 2 ;  // the I/O pin for the first LED
 int NUM = 6;   // number of LEDs
 void setup()
 {
@@ -135,6 +143,8 @@ void loop()
      delay(400);        // delay
    }  
 }
+
+
 ```
 
 ## Output
@@ -163,7 +173,9 @@ https://user-images.githubusercontent.com/91405741/137293394-f7b99c4d-4659-44fc-
 
 ## Code
 
-```int ledpin=11;// initialize pin 11
+```
+
+int ledpin=11;// initialize pin 11
 int inpin=7;// initialize pin 7
 int val;// define val
 void setup()
@@ -179,6 +191,7 @@ if(val==LOW)// check if the button is pressed, if yes, turn on the LED
 else
 { digitalWrite(ledpin,HIGH);}
 }
+
 ```
 ## Output
 
@@ -205,7 +218,9 @@ https://user-images.githubusercontent.com/91405741/137346113-b41f1d56-84b5-4437-
 
 ## Code
 
-```int buzzer=8;// initialize digital IO pin that controls the buzzer
+```
+
+int buzzer=8;// initialize digital IO pin that controls the buzzer
 void setup() 
 { 
   pinMode(buzzer,OUTPUT);// set pin mode as “output”
@@ -214,6 +229,7 @@ void loop()
 {
 digitalWrite(buzzer, HIGH); // produce sound
 }
+
 ```
 
 ## Output
@@ -244,7 +260,9 @@ The Buzzer makes beep sound.
 
 ## Code
 
-```int redpin = 11; //select the pin for the red LED
+```
+
+int redpin = 11; //select the pin for the red LED
 int bluepin =10; // select the pin for the blue LED
 int greenpin =9;// select the pin for the green LED
 int val;
@@ -272,6 +290,7 @@ for(val=0; val<255; val++)
   }
  Serial.println(val, DEC);
 }
+
 ```
 
 ## Output
