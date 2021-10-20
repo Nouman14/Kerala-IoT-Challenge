@@ -1,9 +1,14 @@
 # Kerala-IoT-Challenge
-Foxlab Makerspace in association with GTech - Group of Technology Companies in Kerala is launching our prestigious program “Kerala IoT Challenge 2021”, with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. Kerala IoT Challenge is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
+
+> Foxlab Makerspace in association with GTech - Group of Technology Companies in Kerala is launching our prestigious program “Kerala IoT Challenge 2021”, with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. Kerala IoT Challenge is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
 # About Me
-Hi everyone! I’m Nouman N, 4'th year Electronics and Communication student from Eranad Knowledge City Technical Campus, Manjeri. I also a Diploma holder in Electronics. I’m here to explore new dimensions of the IoT world.And I also interested in Cyber Security
+> Hi everyone! I’m Nouman N, 4'th year Electronics and Communication student from Eranad Knowledge City Technical Campus, Manjeri. I also a Diploma holder in Electronics. I’m here to explore new dimensions of the IoT world.And I also interested in Cyber Security
 
 # Experiment 1 - Hello World LED Blinking
+
+> A basic Program similar to printing "*Hello World* " in any programming language. The Aim is to blink an LED using **Arduino Uno Board**.
+
+> Arduino Uno is an open-source microcontroller board developed by Arduino.cc. It has several advantages over the conventional microcontrollers. It comes with a pre-tested software and hardware libraries and has its own integrated development environment (IDE). Also it is less expensive & beginner friendly.
 
 ## Components Required  
 * Arduino Uno Board 
@@ -19,9 +24,7 @@ Hi everyone! I’m Nouman N, 4'th year Electronics and Communication student fro
 
 ## Code
 
-```
-
-int ledPin = 10; // define digital pin 10.
+```int ledPin = 10; // define digital pin 10.
 void setup()
 {
 pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
@@ -33,19 +36,18 @@ delay(1000); // wait for a second.
 digitalWrite(ledPin, LOW); // set the LED off.
 delay(1000); // wait for a second
 }
-
 ```
 
 ## Output
 
-The LED is blinked with a time interval od 1 second
+> The LED is blinked with a time interval od 1 second
 
 https://user-images.githubusercontent.com/91405741/137283496-04e4fe43-bc6a-4ca5-a6e0-0f7ecdcd56c5.mp4
 
 
 # Experiment 2 : Traffic Light
 
-In the previous program, we have done the LED blinking experiment with one LED. Now, it’s time to up the stakes and do a bit more complicated experiment-traffic lights. Actually, these two experiments are similar. While in this traffic lights experiment, we use 3 LEDs with different colors rather than 1 LED.
+> In the previous program, we have done the LED blinking experiment with one LED. Now, it’s time to up the stakes and do a bit more complicated experiment-traffic lights. Actually, these two experiments are similar. While in this traffic lights experiment, we use 3 LEDs with different colors rather than 1 LED.
 
 ## Components Required 
 
@@ -62,9 +64,7 @@ In the previous program, we have done the LED blinking experiment with one LED. 
 
 ## Code
 
-```
-
-int redled =10; // initialize digital pin 10.
+```int redled =10; // initialize digital pin 10.
 int yellowled =7; // initialize digital pin 7.
 int greenled =4; // initialize digital pin 4.
 void setup()
@@ -90,19 +90,18 @@ digitalWrite(redled, HIGH);// turn on red LED
 delay(5000);// wait 5 seconds
 digitalWrite(redled, LOW);// turn off red LED
 }
-
 ```
 
 ## Output
 
-In Traffic light the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. This process continues.
+> In Traffic light the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. This process continues.
 
 https://user-images.githubusercontent.com/91405741/137290512-e479c4b3-1810-4b72-966f-42348620b1f4.mp4
 
 
 # Experiment 3 : LED Chasing Effect
 
-We often see billboards composed of colorful LEDs. They are constantly changing to form various light effects. In this experiment, we compile a program to simulate LED chasing effect. The long lead of LED is the positive side; short lead is negative.
+> We often see billboards composed of colorful LEDs. They are constantly changing to form various light effects. In this experiment, we compile a program to simulate LED chasing effect. The long lead of LED is the positive side; short lead is negative.
 
 ## Components Required
 
@@ -120,7 +119,6 @@ We often see billboards composed of colorful LEDs. They are constantly changing 
 ## Code
 
 ```
-
 int BASE = 2 ;  // the I/O pin for the first LED
 int NUM = 6;   // number of LEDs
 void setup()
@@ -144,7 +142,6 @@ void loop()
    }  
 }
 
-
 ```
 
 ## Output
@@ -153,6 +150,8 @@ https://user-images.githubusercontent.com/91405741/137293394-f7b99c4d-4659-44fc-
 
 
 # Experiment 4: Button Controlled LED
+
+> An experiment to light an LED using a Push Button.
 
 ## Components Required 
 
@@ -195,12 +194,14 @@ else
 ```
 ## Output
 
-When the push button is pressed the LED is turned on otherwise it is off.
+> When the push button is pressed the LED is turned on otherwise it is off.
 
 https://user-images.githubusercontent.com/91405741/137346113-b41f1d56-84b5-4437-9d7a-3f11ab84991a.mp4
 
 
 # Experiment 5 : Buzzer
+
+> An experiment to understand the working of a buzzer.
 
 ## Components Required
 
@@ -234,13 +235,14 @@ digitalWrite(buzzer, HIGH); // produce sound
 
 ## Output
 
-The Buzzer makes beep sound.
+> The Buzzer makes beep sound.
 
 ![1634194968124](https://user-images.githubusercontent.com/91405741/137345459-3ad2e1ac-b091-40fd-bf7b-1bcccf29baec.jpg)
 
 
 # Experiment 6 : RGB LED
 
+> An experiment to understand the working of a RGB LED.
 
 ## Components Required
 
@@ -295,7 +297,7 @@ for(val=0; val<255; val++)
 
 ## Output
 
-The RGB LED blinks.
+> The RGB LED blinks.
 
 https://user-images.githubusercontent.com/91405741/137348290-42dcbd25-ad12-4c09-b50b-b8edf17e6235.mp4
 
