@@ -20,6 +20,8 @@
 
 ## Circuit Diagram
 
+![1634898879183](https://user-images.githubusercontent.com/91405741/138440483-6eeb5475-4946-42e7-9f6b-3860c91efa42.jpg)
+
 ![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137279765-8a82a34f-1dc0-4afc-9bd3-a31d7f62c428.png)
 
 ## Code
@@ -65,6 +67,8 @@ allowfullscreen></iframe>
 * 220Ω resistor *3
 
 ## Circuit Diagram
+
+![1634898905963](https://user-images.githubusercontent.com/91405741/138440549-c4c958ec-0893-4e80-8aba-3a43cafe865e.jpg)
 
 ![yiU1x_3102_1627566759](https://user-images.githubusercontent.com/91405741/137288387-e85f8db9-ae97-49d0-888d-a2fc15e4c496.png)
 
@@ -126,6 +130,8 @@ allowfullscreen></iframe>
 
 ## Circuit Diagram
 
+![1634898830010](https://user-images.githubusercontent.com/91405741/138440641-844673fc-0cc9-4e67-bf8c-f1dd30d7a970.jpg)
+
 ![s5yR0_3102_1627567167](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
 
 ## Code
@@ -181,6 +187,8 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
+
+![1634898715966](https://user-images.githubusercontent.com/91405741/138440748-60c27803-19c4-42f1-a4ec-cc198598bae8.jpg)
 
 ![Ztk6E_3102_1628160172](https://user-images.githubusercontent.com/91405741/137344162-7149dfcf-836c-43ec-a01c-177d48958d12.png)
 
@@ -271,6 +279,8 @@ digitalWrite(buzzer, HIGH); // produce sound
 
 ## Circuit Diagrams
 
+![1634898744599](https://user-images.githubusercontent.com/91405741/138440808-226f31cb-dfc3-487c-ba4f-a81c1cede5a0.jpg)
+
 ![xX9cw_3102_1628160649](https://user-images.githubusercontent.com/91405741/137347719-6966c0b1-021d-471c-b0a7-48d0441752d0.png)
 
 ![A8a40_3102_1628160631](https://user-images.githubusercontent.com/91405741/137347782-e0a8a008-8706-4b7c-ba31-38ef0ab6ca72.png)
@@ -331,6 +341,8 @@ allowfullscreen></iframe>
 
 > Photo Resistor (Photovaristor) is a resistor whose resistance varies from different incident light strength. It's based on the photoelectric effect of semiconductor. If the incident light is intense, its resistance reduces; if the incident light is weak, the resistance increases.
 
+![L5Iw9_3102_1628755894](https://user-images.githubusercontent.com/91405741/138436746-d1cfb008-0d90-4754-b4c4-fe133329c8b5.png)
+
 ## Components Required
 
 * Arduino Uno Board
@@ -345,6 +357,8 @@ allowfullscreen></iframe>
 ## Circuit Diagrams
 
 ![InShot_20211022_104012830](https://user-images.githubusercontent.com/91405741/138399282-80073c77-63f1-423b-81e3-03a16524fca2.jpg)
+
+![schema_Myt5vqqplZ](https://user-images.githubusercontent.com/91405741/138436635-60cb2ec4-091d-4f24-bf96-b0289e06fa00.png)
 
 ## Procedure
 
