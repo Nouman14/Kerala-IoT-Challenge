@@ -230,7 +230,15 @@ allowfullscreen></iframe>
 * Breadboard Jumper Wire*2
 * USB cable*1
 
-## Circuit Diagrams
+Components Required
+Arduino Uno Board
+Photo Resistor*1
+Red M5 LED*1
+10KΩ Resistor*1
+220Ω Resistor*1
+Breadboard*1
+Breadboard Jumper Wire*7
+USB cable*1
 
 ![BBr05_3102_1628160460](https://user-images.githubusercontent.com/91405741/137346830-1fa2408c-2a1d-4fdf-a049-5736aeb803ec.png)
 
@@ -323,3 +331,87 @@ src="https://user-images.githubusercontent.com/91405741/137348290-42dcbd25-ad12-
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+
+
+Experiment 7 - LDR Light Sensor
+
+An experiment to understand the working of an LDR light Sensor.
+LDR : Light Dependent Sensor
+Photo Resistor (Photovaristor) is a resistor whose resistance varies from different incident light strength. It's based on the photoelectric effect of semiconductor. If the incident light is intense, its resistance reduces; if the incident light is weak, the resistance increases.
+
+Components Required
+Arduino Uno Board
+Photo Resistor*1
+Red M5 LED*1
+10KΩ Resistor*1
+220Ω Resistor*1
+Breadboard*1
+Breadboard Jumper Wire*7
+USB cable*1
+
+## Circuit Diagrams
+
+![InShot_20211022_104012830](https://user-images.githubusercontent.com/91405741/138399282-80073c77-63f1-423b-81e3-03a16524fca2.jpg)
+
+Instructions
+Connect the 3.3v output of the Arduino to the positive rail of the breadboard
+Connect the ground to the negative rail of the breadboard
+Place the LDR on the breadboard
+Attach the 10K resistor to one of the legs of the LDR
+Connect the A0 pin of the Arduino to the same column where the LDR and resistor is connected (Since the LDR gives out an analog voltage, it is connected to the analog input pin on the Arduino. The Arduino, with its built-in ADC (Analog to Digital Converter), then converts the analog voltage from 0-5V into a digital value in the range of 0-1023). - Now connect the other end of the 10K resistor to the negative rail
+And the the second (free) leg of the LDR to the positive rail
+Pretty much this is what we need for the light sensing. Basic circuits like this can be done without an Arduino aswell. However, if you want to log the values and use it to create charts, run other logics etc. I will recomend an Arduino or ESP8266 or may be a ESP32 for this.
+Now, as we want our circuit to do something in the real world other than just displaying the values on the computer screen we will be attaching a LED to the circuit. The LED will turn on when its dark and will go off when its bright. To achieve this we will:
+Place the LED on the breadboard
+Connect the 220ohm resistor to the long leg (+ve) of the LED
+Then we will connect the other leg of the resistor to pin number 13 (digital pin) of the Arduino
+and the shorter leg of the LED to the negative rail of the breadboard
+
+## Code
+
+const int ledPin = 13;
+
+const int ldrPin = A0;
+
+void setup() {
+
+Serial.begin(9600);
+
+pinMode(ledPin, OUTPUT);
+
+pinMode(ldrPin, INPUT);
+
+}
+
+void loop() {
+
+int ldrStatus = analogRead(ldrPin);
+
+if (ldrStatus <= 200) {
+
+digitalWrite(ledPin, HIGH);
+
+Serial.print("Its DARK, Turn on the LED : ");
+
+Serial.println(ldrStatus);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+Serial.print("Its BRIGHT, Turn off the LED : ");
+
+Serial.println(ldrStatus);
+
+}
+
+}
+
+## Output
+
+
+https://user-images.githubusercontent.com/91405741/138401141-851fe747-dac0-4600-9295-1a02e6ecacf8.mp4
+
+
+
+
