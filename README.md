@@ -410,5 +410,91 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
 
+# Experiment 8 : Flame Sensor
+
+> An experiment to understand the working of an Flame sensor.
+
+## Flame Sensor
+
+ **Usage**:These types of sensors are used for short range fire detection and can be used to monitor projects or as a safety precaution to cut devices off / on.
+
+ **Range**:I have found this unit is mostly accurate up to about 3 feet.
+
+ **How it works**:The flame sensor is very sensitive to IR wavelength at 760 nm ~ 1100 nm light.
+
+**Analog output (A0)**: Real-time output voltage signal on the thermal resistance.
+
+**Digital output (D0)**: When the temperature reaches a certain threshold, the output high and low signal threshold adjustable via potentiometer.
+
+**Pins:**
+
+* VCC - Positive voltage input: 5v for analog 3.3v for Digital.
+
+* A0 - Analog output
+
+* D0 - Digital output
+
+* GND -  Ground
+
+## Components Required
+
+* Arduino UNO
+* Flame Sensor
+* LED
+* Buzzer
+* BreadBoard
+* Jumper
+
+## Circuit Diagrams
+
+![1636554036921 1](https://user-images.githubusercontent.com/91405741/141130577-55ec7164-a222-4dac-8e57-ada3298bb18e.jpg)
+
+
+   ## Code
+
+```
+
+const int buzzerPin = 12;
+const int flamePin = 11;
+int Flame = HIGH;
+int redled = 5;
+int greenled = 6;
+void setup() 
+{
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(redled, OUTPUT);
+  pinMode(greenled, OUTPUT);
+
+  pinMode(flamePin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  Flame = digitalRead(flamePin);
+  if (Flame== LOW)
+  {
+    digitalWrite(buzzerPin, HIGH);
+    digitalWrite(redled, HIGH);
+    digitalWrite(greenled, LOW);
+  }
+  else
+  {
+    digitalWrite(buzzerPin, LOW);
+    digitalWrite(greenled, HIGH);
+    digitalWrite(redled, LOW);
+  }
+}
+
+```
+
+## Output
+
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/141132540-37851868-036e-4169-a3cd-c0ab2560c2bc.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
 
 
