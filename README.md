@@ -497,4 +497,25 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
 
+# Experiment 9 : LM35 Temperature Sensor
+
+> An experiment to understand the working of an LM35 Temperature Sensor.
+
+## LM35 Temperature Sensor
+
+> LM35 is a common and easy-to-use temperature sensor. LM35 is a widely used temperature sensor with many different package types. At room temperature, it can achieve the accuracy of ±1/4°C without additional calibration processing. LM35 temperature sensor can produce different voltage by different temperature When temperature is 0 ℃, it outputs 0V; if increasing 1 ℃, the output voltage will increase 10 mv.
+
+## Components Required
+
+* Arduino Uno  Board*1
+* LM35*1
+* Breadboard*1
+* Breadboard Jumper Wire*5
+* USB cable*1
+
+## Circuit Diagrams
+
+
+
+
 
