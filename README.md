@@ -658,3 +658,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
+![Pot 1](https://user-images.githubusercontent.com/91405741/141272087-4bd29d71-4a2d-4768-8576-3064f16acce4.jpg)
+
+![Pot1 1](https://user-images.githubusercontent.com/91405741/141272429-4aca8d07-5f73-45af-9478-e1f1ca9a139d.jpg)
+
