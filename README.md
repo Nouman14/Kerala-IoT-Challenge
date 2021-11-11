@@ -515,7 +515,39 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
+![1636557270585 1](https://user-images.githubusercontent.com/91405741/141250276-d178d05c-69d6-45ba-b495-d9a1cf7bd232.jpg)
 
 
+   ## Code
+
+```
+int potPin = 0; // initialize analog pin 0 for LM35 temperature sensor
+void setup()
+{
+Serial.begin(9600);// set baud rate at”9600”
+}
+void loop()
+{
+int val;// define variable
+int dat;// define variable
+val=analogRead(0);// read the analog value of the sensor and assign it to val
+dat=(125*val)>>8;// temperature calculation formula
+Serial.print("Temperatuture");// output and display characters beginning with Tep
+Serial.print(dat);// output and display value of dat
+Serial.println("C");// display “C” characters
+delay(2000);// wait for 2 second
+}
+
+```
+
+## Output
+
+
+
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/141250697-7d83e0f5-8625-4855-9e0e-f9894e31dee3.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>        
 
 
