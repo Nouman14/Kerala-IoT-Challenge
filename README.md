@@ -924,11 +924,10 @@ void loop() {
 ## Output
 
 <iframe width="560" height="315"
-src="https://user-images.githubusercontent.com/91405741/143880865-b1d3b3f3-aa18-4328-8fc8-24275f1a5690.mp4"
+src="https://user-images.githubusercontent.com/91405741/143883043-5f4e8714-905d-4387-9e4b-a1e4d735333f.mp4"
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe> 
-
                                                                                
 # Assignment 2 : Digital Dice  
 
