@@ -890,11 +890,9 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams 
 
-![Dice1 1](https://user-images.githubusercontent.com/91405741/143875726-bb3442b7-7057-46fb-99d0-25b3e0cb20a6.jpg)
+![A1 1](https://user-images.githubusercontent.com/91405741/143880464-6d68d5e8-c112-4d8e-a034-e5c86089f4a7.jpg)
 
-![Dice2 1](https://user-images.githubusercontent.com/91405741/143875839-2c2002b0-c8d7-45b8-adee-957dd0448ebe.jpg)
-
-![Dice3 1](https://user-images.githubusercontent.com/91405741/143875931-c7814d8b-e2b3-4018-95ec-9308fc68a30f.jpg)
+![A2 1](https://user-images.githubusercontent.com/91405741/143880614-69a909d0-73cf-4221-ae95-3aa6ae0a0d22.jpg)
 
 ## Code
 
@@ -925,17 +923,14 @@ void loop() {
 
 ## Output
 
-![Dice4 1](https://user-images.githubusercontent.com/91405741/143876177-d408df20-c947-4e69-b7b0-e80a954d23a2.jpg)
-
 <iframe width="560" height="315"
-src="https://user-images.githubusercontent.com/91405741/143876312-0237e075-540f-45bc-b16e-50375d4637e2.mp4"
+src="https://user-images.githubusercontent.com/91405741/143880865-b1d3b3f3-aa18-4328-8fc8-24275f1a5690.mp4
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe> 
 
-
-
-# Assignment 2 : Digital Dice 
+                                                                               
+# Assignment 2 : Digital Dice  
 
 > An experiment to create a Digital Dice using 6 LEDs and 1 Push Button
 
@@ -952,10 +947,12 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams 
 
-![A1 1](https://user-images.githubusercontent.com/91405741/143878598-cb3a1c91-9b70-42e2-baf0-7514819d51c7.jpg)
+![Dice1 2](https://user-images.githubusercontent.com/91405741/143881394-a2133fc4-d00e-4bc3-84f6-d449c5065521.jpg)
 
-![A2 1](https://user-images.githubusercontent.com/91405741/143878719-a83db953-6cc9-4f40-9775-277697bca1c1.jpg)
-
+![Dice2 1](https://user-images.githubusercontent.com/91405741/143881492-3f52e6f5-468b-4de2-af3f-cf31e78133e4.jpg)
+                                                                               
+![Dice3 1](https://user-images.githubusercontent.com/91405741/143881686-362bb59d-6085-40cf-89ef-ac7450c5475a.jpg)
+                                                                             
 ## Code
 
 ```
@@ -1060,11 +1057,11 @@ void loop() {
 
 ## Output
 
+![Dice4 1](https://user-images.githubusercontent.com/91405741/143881878-4790f5e5-3a54-42ad-b029-b6b5f070908e.jpg)
+
 <iframe width="560" height="315"
-src="https://user-images.githubusercontent.com/91405741/143879515-71668e7c-dae7-4229-bb57-ec0b4c1a0e04.mp4"
+src="https://user-images.githubusercontent.com/91405741/143882043-b0170f6b-5ee5-40d4-87fe-74c01e46b56d.mp4"
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe> 
-
-
 
