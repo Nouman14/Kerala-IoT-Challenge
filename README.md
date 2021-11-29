@@ -902,30 +902,20 @@ allowfullscreen></iframe>
 
 const int ledPin = 13;   //the number of the LED pin
 const int ldrPin = A0;  //the number of the LDR pin
-
-
 void setup() {
-
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);  //initialize the LED pin as an output
   pinMode(ldrPin, INPUT);   //initialize the LDR pin as an input
 }
-
 void loop() {
-
   int ldrStatus = analogRead(ldrPin);   //read the status of the LDR value
-
   //check if the LDR status is <= 300
   //if it is, the LED is HIGH
-
    if (ldrStatus <=300) {
-
     digitalWrite(ledPin, HIGH);               //turn LED on
     Serial.println("LDR is DARK, LED is ON");
-    
    }
   else {
-
     digitalWrite(ledPin, LOW);          //turn LED off
     Serial.println("LDR is Bright, LED is OFF");
   }
@@ -939,6 +929,139 @@ void loop() {
 
 <iframe width="560" height="315"
 src="https://user-images.githubusercontent.com/91405741/143876312-0237e075-540f-45bc-b16e-50375d4637e2.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe> 
+
+
+
+# Assignment 2 : Digital Dice 
+
+> An experiment to create a Digital Dice using 6 LEDs and 1 Push Button
+
+## Components Required
+
+* Arduino Uno Board*1
+* Breadboard*1
+* Breadboard Jumper Wire
+* USB cable*1
+* LED*6
+* Push Button*1
+* 1KΩ Resistor*1
+* 220Ω Resistor*6
+
+## Circuit Diagrams 
+
+![A1 1](https://user-images.githubusercontent.com/91405741/143878598-cb3a1c91-9b70-42e2-baf0-7514819d51c7.jpg)
+
+![A2 1](https://user-images.githubusercontent.com/91405741/143878719-a83db953-6cc9-4f40-9775-277697bca1c1.jpg)
+
+## Code
+
+```
+
+#define DEBUG 0
+// 6 consecutive digital pins for the LEDs
+int first = 2;
+int second = 3;
+int third = 4;
+int fourth = 5;
+int fifth = 6;
+int sixth = 7;
+// pin for the button switch
+int button = 12;
+// value to check state of button switch
+int pressed = 0;
+void setup() {
+  // set all LED pins to OUTPUT
+  for (int i=first; i<=sixth; i++) {
+    pinMode(i, OUTPUT);
+  }
+  // set buttin pin to INPUT
+  pinMode(button, INPUT);
+
+  // initialize random seed by noise from analog pin 0 (should be unconnected)
+  randomSeed(analogRead(0));
+  // if we're debugging, connect to serial 
+  #ifdef DEBUG
+    Serial.begin(9600);
+  #endif
+}
+void buildUpTension() {
+  // light LEDs from left to right and back to build up tension
+  // while waiting for the dice to be thrown
+  // left to right
+  for (int i=first; i<=sixth; i++) {
+    if (i!=first) {
+      digitalWrite(i-1, LOW);
+    }
+    digitalWrite(i, HIGH);
+    delay(100);
+  }
+  // right to left
+  for (int i=sixth; i>=first; i--) {
+    if (i!=sixth) {
+      digitalWrite(i+1, LOW);
+    }
+    digitalWrite(i, HIGH);
+    delay(100);
+  }
+}
+
+void showNumber(int number) {
+  digitalWrite(first, HIGH);
+  if (number >= 2) {
+    digitalWrite(second, HIGH);
+  }
+  if (number >= 3) {
+    digitalWrite(third, HIGH);    
+  }
+  if (number >= 4) {
+    digitalWrite(fourth, HIGH);    
+  }
+  if (number >= 5) {
+    digitalWrite(fifth, HIGH);    
+  }
+  if (number == 6) {
+    digitalWrite(sixth, HIGH);    
+  }
+}
+int throwDice() {
+  // get a random number in the range [1,6]
+  int randNumber = random(1,7);
+  
+  #ifdef DEBUG
+    Serial.println(randNumber);
+  #endif
+  
+  return randNumber;
+}
+
+void setAllLEDs(int value) {
+  for (int i=first; i<=sixth; i++) {
+    digitalWrite(i, value);
+  }
+}
+void loop() {
+  // if button is pressed - throw the dice
+  pressed = digitalRead(button);
+
+  if (pressed == HIGH) {
+    // remove previous number
+    setAllLEDs(LOW); 
+    buildUpTension();
+    int thrownNumber = throwDice();
+    showNumber(thrownNumber);
+  } 
+}
+
+
+```
+
+## Output
+
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/143879515-71668e7c-dae7-4229-bb57-ec0b4c1a0e04.mp4"
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe> 
