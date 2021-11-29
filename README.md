@@ -872,3 +872,76 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe> 
 
+
+# Assignment 1 : Automatic Night Lamp
+
+> An experiment to create automatic night lamp model using LDR and LED.
+
+## Components Required
+
+* Arduino Uno Board
+* Photo Resistor*1
+* Yellow M5 LED*1
+* 10KΩ Resistor*1
+* 220Ω Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire
+* USB cable*1
+
+## Circuit Diagrams 
+
+![Dice1 1](https://user-images.githubusercontent.com/91405741/143875726-bb3442b7-7057-46fb-99d0-25b3e0cb20a6.jpg)
+
+![Dice2 1](https://user-images.githubusercontent.com/91405741/143875839-2c2002b0-c8d7-45b8-adee-957dd0448ebe.jpg)
+
+![Dice3 1](https://user-images.githubusercontent.com/91405741/143875931-c7814d8b-e2b3-4018-95ec-9308fc68a30f.jpg)
+
+## Code
+
+```
+
+const int ledPin = 13;   //the number of the LED pin
+const int ldrPin = A0;  //the number of the LDR pin
+
+
+void setup() {
+
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);  //initialize the LED pin as an output
+  pinMode(ldrPin, INPUT);   //initialize the LDR pin as an input
+}
+
+void loop() {
+
+  int ldrStatus = analogRead(ldrPin);   //read the status of the LDR value
+
+  //check if the LDR status is <= 300
+  //if it is, the LED is HIGH
+
+   if (ldrStatus <=300) {
+
+    digitalWrite(ledPin, HIGH);               //turn LED on
+    Serial.println("LDR is DARK, LED is ON");
+    
+   }
+  else {
+
+    digitalWrite(ledPin, LOW);          //turn LED off
+    Serial.println("LDR is Bright, LED is OFF");
+  }
+}
+
+```
+
+## Output
+
+![Dice4 1](https://user-images.githubusercontent.com/91405741/143876177-d408df20-c947-4e69-b7b0-e80a954d23a2.jpg)
+
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/143876312-0237e075-540f-45bc-b16e-50375d4637e2.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe> 
+
+
+
