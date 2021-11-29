@@ -923,6 +923,12 @@ void loop() {
 
 ## Output
 
+<iframe width="560" height="315"
+src="https://user-images.githubusercontent.com/91405741/143884337-146d3a7a-1891-4a6e-9dcc-32cea78e5690.mp4"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe> 
+
                                                   
 # Assignment 2 : Digital Dice  
 
